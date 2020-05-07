@@ -104,7 +104,14 @@ jQuery(function($)
 
 			for (var __k in __decompose)
 			{
-				var __temps = parseInt(__decompose[__k]) * 60;
+
+				if(__decompose[__k].trim().split(' ').length == 2){
+					let minutes_seconds_tokens = __decompose[__k].trim().split(' ');
+					__decompose[__k] = minutes_seconds_tokens[0]
+					__decompose[__k] += (minutes_seconds_tokens[1] / 60);
+				}
+				
+				var __temps = __decompose[__k] * 60;
 
 				if (__temps)
 				{
