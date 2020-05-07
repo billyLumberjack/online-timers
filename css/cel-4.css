@@ -1,0 +1,239 @@
+.chr-tot {
+	font-size: 24px;
+	height: 50px;
+	display: inline-block;
+	-moz-box-shadow: inset 0 0 6px 3px #DDD;
+	-webkit-box-shadow: inset 0 0 6px 3px #DDD;
+	box-shadow: inset 0 0 6px 3px #DDD;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 25px 10px 10px
+}
+.chr-tot div {
+	margin: 6px 20px 0
+}
+.chr-tot div div.grd {
+	width: 16px
+}
+.chr-tot div div.pti {
+	padding-top: 8px;
+	width: 12px;
+	font-size: 16px;
+	color: #555
+}
+.cdr, .cdr-all {
+	font-size: 24px;
+	width: 195px;
+	margin-left: 10px
+}
+.cdr2 {
+	font-size: 20px;
+	width: 260px;
+	margin-left: 10px;
+}
+.chr-tot {
+	background-color: #EEE;
+	border: 1px solid #333
+}
+.chr-tot div div {
+	display: inline-block;
+	text-align: center;
+	color: #999;
+	margin: 0;
+	padding-top: 8px;
+}
+.chr-mlt {
+	margin: 2px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+	height: 200px;
+	display: inline-block;
+	vertical-align:top;
+}
+.chr-mlt h3
+{
+	font: normal 16px Verdana,Geneva,sans-serif;
+	margin: 1em 0 6px 10px;	
+}
+.chr-nbr {
+margin: 10px;
+display:inline-block;
+}
+.cdr-all {
+	display:inline-block;
+}
+select {
+	width: 50px;
+	padding: 5px;
+	font-size: 20px;
+	line-height: 1;
+	border: 1px solid #555;
+	background: #EEE;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 36px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	/*appearance: none;*/
+	text-align:center;
+}
+.f-str, .f-stp, .f-chr {
+	border: 1px outset #000;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #FFF;
+	zoom: 1;
+	position: relative;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	line-height: normal;
+	min-width: 178px;
+	margin: 3px;
+	padding: 5px 20px
+}
+.f-str {
+	background-color: #393
+}
+.f-stp {
+	background-color: #C44
+}
+.f-chr {
+	background-color: #17C
+}
+input.f-str:hover, input.f-str:focus {
+	background: #060
+}
+input.f-stp:hover, input.f-stp:focus {
+	background: #911
+}
+input.f-chr:hover, input.f-chr:focus {
+	background: #049
+}
+@media(max-width:700px)
+{
+	p.acc
+	{
+		display:none;
+	}
+}
+.lgn-mem {
+line-height: normal;
+vertical-align: text-top;
+margin: 8px 0;
+}
+.lgn-mem input.f-txt
+{
+	margin:0 10px;
+	height:24px;
+	background-color:#FFF;
+	border-width:1px;
+	vertical-align:top;
+}
+.lgn-mem input.f-sbm
+{
+	height:34px;
+	vertical-align:top;
+	margin:0px 10px 0 0;
+}
+.lgn-mem input.f-sbm:hover, .lgn-mem input.f-sbm:focus
+{
+	background-color:#C00;
+}
+@media(max-width:700px)
+{
+	#cdr-exp
+	{
+		display:none;
+	}
+	p.acc
+	{
+		display:none;
+	}
+}
+ul.lst-mem
+{
+	overflow:hidden;
+	list-style:none
+}
+.mem-prt, .mem-ttl, .mem-cpt
+{
+	line-height:normal;
+	border:1px solid #555;
+	background:#EEE;
+	font-size:16px;
+	height:24px;
+	display:inline-block;
+	-moz-box-shadow:inset 0 0 4px 2px #DDD;
+	-webkit-box-shadow:inset 0 0 4px 2px #DDD;
+	box-shadow:inset 0 0 4px 2px #DDD;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding:4px 5px;
+	margin-right:10px;
+}
+.mem-prt, .mem-ttl
+{
+	width:146px;
+}
+.mem-cpt
+{
+	width:40px;
+}
+.mem-prt div, .mem-ttl div, .mem-cpt div
+{
+	overflow:hidden;
+	list-style:none;
+	white-space:nowrap;
+	letter-spacing:.05em;
+	word-spacing:.2em;
+	margin:0 10px 0 10px;
+	padding-top:2px;
+}
+.mem-cpt div
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:24px;
+}
+.mem-cpt div div
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	color:#999
+}
+.mem-prt div div.grd, .mem-ttl div div.grd
+{
+	width:11px
+}
+.mem-prt div div.pti, .mem-ttl div div.pti
+{
+	padding-top:7px;
+	width:8px;
+	font-size:10px
+}
+.chr-tot, .mem-ttl
+{
+	background-color:#EEE;
+	border:1px solid #333
+}
+.chr-prt, .chr-lst, .chr-cpt, .chr-cpt-lst, .mem-prt, .mem-cpt
+{
+	background-color:#F8F8F8;
+	border:1px solid #888
+}
+.chr-prt div div, .chr-lst div div, .chr-tot div div, .chr-cpt div div, .chr-cpt-lst div div, .mem-prt div div, .mem-ttl div div
+{
+	display:inline-block;
+	text-align:center;
+	color:#999;
+	margin:0
+}
+.chr-prt div div, .chr-lst div div, .chr-tot div div, .chr-cpt div div, .chr-cpt-lst div div
+{
+	padding-top:8px;
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="iso-8859-1"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>Stopwatch with several finishes</title>
+		<meta name="keywords" content="timer, stopwatch, online stopwatch, stopwatch free, stopwatch intervals, timer interval"/>
+		<meta name="description" content="Easy to use stopwatch. It makes it possible to measure the time from the same origin."/>
+		<meta name="author" content="tea-timer.fr"/>
+		<link rel="shortlink" href="stopwatch-with-several-finishes.html"/>
+		<link rel="icon" type="image/png" href="icone/icone_s.png"/>
+		<link rel="shortlink" href="http://teas.fr/2l">
+		<link href="css/cel.css" rel="stylesheet"/>
+		<link href="css/cel-x.css" rel="stylesheet"/>
+		<link href="css/ress.css%3Fv=a.css" rel="stylesheet"/>
+		 <style type="text/css">#pub2{margin-top:50px}</style>
+		<link rel="alternate" hreflang="x-default" href="stopwatch-with-several-finishes.html"/><link rel="alternate" hreflang="en" href="stopwatch-with-several-finishes.html"/><link rel="alternate" hreflang="fr" href="http://chronometre.minuteur-en-ligne.fr/chronometre-plusieurs-arrivees"/>	<!-–[if lt IE 9]><!--><script src="./js/html5shiv.js"></script><!--<![endif]-–>
+<!-–[if IE]><!--><script src="js/jquery-1.10.2.min.js"></script><!--<![endif]-->
+<!–-[if !IE]><!--><script src="./js/jquery-2.0.3.min.js"></script><!--<![endif]--><script src="js/ress.js%3Fv=a"></script><script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  		ga('create', 'UA-35916926-3', 'online-timers.com');
+  		ga('send', 'pageview');
+	</script>		<script src="js/cel-x.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div><script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/fr_FR/all.js#xfbml=1";fjs.parentNode.insertBefore(js,fjs)}(document,"script","facebook-jssdk"));</script>		<div id="bar-b">
+			<div id="ctr-pg">
+				<header><div class="pct"><img typeof="foaf:Image" src="png/stopwatch.png"  alt="Online stopwatch"/></div><ul class="tab-1"><li><a href="." title="Online Timer">timer</a></li><li><a href="online-stopwatch.html" title="Online Stopwatch" class="active">Stopwatch</a></li></ul><ul class="tab-2"><li><a href="online-stopwatch.html" title="Online Stopwatch">stopwatch</a></li><li><a href="stopwatch-with-time-intervals.html" title="Stopwatch with time intervals">with time intervals</a></li><li><a href="stopwatch-with-several-finishes.html" title="Stopwatch with several finishes" class="active">with several finishes</a></li><li><a href="multiple-stopwatches.html" title="Multiple stopwatches">multiple stopwatches</a></li></ul><h1>Stopwatch with several finishes</h1><h2>Online stopwatch</h2></header>				<div id="pub2"></div>
+				<div id="page">
+					<div class="acc"><p>It makes it possible to <strong>measure the time from the same origin</strong>.</p></div>
+					<h2>Stopwatch</h2>
+					<div>
+						<div>
+						<h6 class="chr-ttr chr-ttr-last">Last <span id="num-last"></span></h6><div class="chr-lst"><div><div class="grd h_1">0</div><div class="grd h_0">0</div><div>:</div><div class="grd m_1">0</div><div class="grd m_0">0</div><div>:</div><div class="grd s_1">0</div><div class="grd s_0">0</div><div>.</div><div class="pti c_2">0</div><div class="pti c_1">0</div></div></div><div class="chr-cpt-lst"><div><div class="grd">0</div></div></div>						<h6 class="chr-ttr chr-ttr-total">Time <span id="num-tour"></span></h6><div class="chr-tot"><div><div class="grd h_1">0</div><div class="grd h_0">0</div><div>:</div><div class="grd m_1">0</div><div class="grd m_0">0</div><div>:</div><div class="grd s_1">0</div><div class="grd s_0">0</div><div>.</div><div class="pti c_2">0</div><div class="pti c_1">0</div></div></div><div class="chr-cpt"><div><div class="grd">0</div></div></div>						</div>						
+						<div id="cdr-all">
+						<div id="cdr-start" style="display:none;">
+							<div class="cdr">
+								<input type="submit" name="start" value="Start" class="f-str bt_start" id="bt-start">
+							</div>
+							<div class="cdr-hlp">
+								<span class="tch-v">0</span> or <span class="tch-v">space bar</span><br/>for first start							</div>
+						</div>
+						<div id="cdr-memorise" style="display:none;">
+							<div class="cdr">
+								<input type="submit" name="memorise" value="Memorized" class="f-str bt_reprise" id="bt-memorise">
+							</div>
+							<div class="cdr-hlp">
+								<span class="tch-v">1</span> or <span class="tch-v">space bar</span><br/>for memorized							</div>
+						</div>
+						<div id="cdr-reprise" style="display:none;">
+							<div class="cdr">
+								<input type="submit" name="reprise" value="Resume" class="f-str bt_reprise" id="bt-reprise">
+							</div>
+							<div class="cdr-hlp">
+								<span class="tch-v">2</span><br/>for resume							</div>
+						</div>
+						<div id="cdr-stop" style="display:none;">
+							<div class="cdr">
+								<input type="submit" name="stop" value="Stop" class="f-stp bt_stop" id="bt-stop">
+							</div>
+							<div class="cdr-hlp">
+								<span class="tch-r">3</span><br/>for stop							</div>
+						</div>
+						<div id="cdr-reset" style="display:none;">
+							<div class="cdr">
+								<input type="submit" name="reset" value="Reset" class="f-stp bt_stop" id="bt-reset">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div id="scl"><div class="scl-2"><g:plusone size="standard" href="./stopwatch-with-several-finishes"></g:plusone></div><script type="text/javascript">window.___gcfg={lang:"en"};(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/plusone.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po,s)})();</script><div class="scl-2"><div class="fb-like" data-href="./stopwatch-with-several-finishes" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></div><div class="scl-2"><a href="https://twitter.com/share" class="twitter-share-button" data-url="./stopwatch-with-several-finishes" data-text="Stopwatch with several finishes" data-via="TeaTimerFr" data-lang="en" data-count="none" data-hashtags="stopwatch">Tweeter</a></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>						<div id="cdr-exp"><span style="display:none;"><span id='t-exp'>Export</span><span id='t-del'>Delete</span></div>
+					<div id="pub1" class="stopwatch.online-timers.com_en_2000_"></div>
+					<h3>Help</h3>
+					<div>
+						<div id="tt">
+							<div class="u2" id="u2-col1">
+																		<div class="u2-cell">
+										<div class="u-msg">
+											<article>
+												<header>
+													<h3>Shortcuts for free Stopwatch with time intervals</h3>
+												</header>
+												<div class="marge">
+													<h4>Key</h4><ul><li>Spacebar: Use the spacebar to start and memorized the stopwatch</li>
+</ul>
+<h4>Buttons</h4>
+<ul><li>"Start" starts the clock for the first time,</li>
+<li>"Stop" stops the clock,</li>
+<li>"" ,</li>
+<li>"Resume" resumes timer starting time has already elapsed,</li>
+<li>"Reset": Deletes all results and reset to 0 the stopwatch.</li></ul>												</div>
+											</article>
+										</div>
+									</div>
+																</div>
+							<div class="u2" id="u2-col2">
+																		<div class="u2-cell">
+										<div class="u-msg">
+											<article>
+												<header>
+													<h3>Some technical details</h3>
+												</header>
+												<div class="marge">
+													<p>It possible to measure several successive time lapses, it displays both time intervals and total time.</p>
+<p>Example of use: a runner does several laps by pressing the space bar each time, the lap time and total time (all rounds) are displayed and saved.</p>												</div>
+											</article>
+										</div>
+									</div>
+																		 
+										<div class="u2-cell">
+											<div class="u-msg">
+												<article>
+													<header>
+														<h4>multilingual</h4>
+													</header>
+														<ul><li><a href="stopwatch-with-several-finishes.html" title="Stopwatch with several finishes">Stopwatch with several finishes</a></li><li><a href="http://chronometre.minuteur-en-ligne.fr/chronometre-plusieurs-arrivees" title="Chronom&egrave;tre avec plusieurs arriv&eacute;es">Chronom&egrave;tre avec plusieurs arriv&eacute;es</a></li></ul>												</article>
+											</div>
+										</div>
+																</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
