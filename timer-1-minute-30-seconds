@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="iso-8859-1"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>Online Timer, 1 minute 30  : seconds </title>
+		<meta name="keywords" content="1 minute 30  : seconds ,timer, Countdown Timer, free countdown, free timer, Egg Timer, tea timer"/>
+		<meta name="description" content="1 minute 30  : seconds . Simple to use timer with time display in the tab, timer visible from afar, ringing alarm, elapsed time display, multiple timers and stopwatches."/>
+		<meta name="author" content="tea-timer.fr"/>
+		<link rel="shortlink" href="timer-1-minute-30-seconds"/>
+		<link id="fav-icone" class="fav-icone" rel="icon" type="image/png" href="icone/icone_t.png" />
+		<link href="css/mel.css?v=a" rel="stylesheet"/>
+		<link href="css/mel-1-2.css?v=a" rel="stylesheet"/>
+		<link href="css/ress.css?v=a" rel="stylesheet"/>
+			<!-–[if lt IE 9]><!--><script src="http://www.online-timers.com/js/html5shiv.js"></script><!--<![endif]-–>
+<!-–[if IE]><!--><script src="js/jquery-1.10.2.min.js"></script><!--<![endif]-->
+<!–-[if !IE]><!--><script src="http://www.online-timers.com/js/jquery-2.0.3.min.js"></script><!--<![endif]--><script src="js/ress.js?v=a"></script><script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  		ga('create', 'UA-35916926-3', 'online-timers.com');
+  		ga('send', 'pageview');
+	</script>		<script src="js/mel-1.js?v=a"></script>
+		<script src="js/mel-1-2.js?v=a"></script>
+		<link rel="canonical" href="timer-1-minute-30-seconds"/>
+	</head>
+	<body>
+		<div id="fb-root"></div><script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/fr_FR/all.js#xfbml=1";fjs.parentNode.insertBefore(js,fjs)}(document,"script","facebook-jssdk"));</script>		<div id="ctr-pg">
+			<div id="pub2"></div>	
+			<div id="page">
+				<div class="title"><a href="index.html">Online Timer</a> - 
+			  <h1>Timer, 1 minute 30  : seconds </h1>
+			    				</div>
+			  <div class="cpt">
+			    <div>
+			      <div id="cdr-m">1</div>
+			      <div class="cdr-esp">:</div>
+			      <div id="cdr-s">30</div>
+			    </div>
+			    <div>
+			      <div class="cdr-m_d"><div class="ico-clo" id="ico-clo"><a href="timer-1-minute-30-seconds#"><span></span></a></div><span id="cdr-m_d">minute</span></div>
+			      <div class="cdr-esp_d"></div>
+			      <div class="cdr-s_d"><span id="cdr-s_d">second</span><span id="cdr-t-d">time exceeded </span><div id="cdr-t-e">elapsed time </div></div>
+			    </div>
+			  </div>
+					<ul class="nbr-clk"><li>Ring time :</li><li><a id="click-2" href="timer-1-minute-30-seconds#">2 s</a></li><li><a id="click-4" href="timer-1-minute-30-seconds#">4 s</a></li><li><a id="click-10" href="timer-1-minute-30-seconds#">10 s</a></li><li><a id="click-999" href="timer-1-minute-30-seconds#">infinite</a></li>	</ul>			  <div>
+			  	<div id="scl"><div class="scl-2"><g:plusone size="standard" href="http://www.online-timers.com"></g:plusone></div><script type="text/javascript">window.___gcfg={lang:"en"};(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/plusone.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po,s)})();</script><div class="scl-2"><div class="fb-like" data-href="http://www.online-timers.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></div><div class="scl-2"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.online-timers.com" data-text="Online Timer" data-via="TeaTimerFr" data-lang="en" data-count="none" data-hashtags="timer">Tweeter</a></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>			  </div>
+				<div id="pub1" class="www.online-timers.com_en_500_"></div>
+			  	<div>
+					<div class="block">								
+						<h3>Electronic controller</h3>
+						<div class="sai">
+							<form action="http://www.online-timers.com/start.php" method="post" name="sai">
+								<div class="spc-0">
+									<input name="minute" type="text" value="1" size="3" maxlength="3" class="f-min" id="f-minute"/><!--
+									--><input name="second" type="text" value="30" size="3" maxlength="2" class="f-scd" id="f-seconde"/><!--
+									--><input type="submit" name="timer" value="Start timer" class="f-sbm-mel" id="f-valide"/>
+								</div>
+							</form>
+						</div>						
+					</div>
+			    <div class="block_minutes">
+			      <ul class="btn">
+			       	<li><a href="index.html">Home page, Countdown timer</a></li>
+			      </ul>
+			    </div>
+				</div>
+				<div class="swf"></div>
+		  </div>
+	  </div>
+	</body>
+</html>
