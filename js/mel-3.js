@@ -25,6 +25,10 @@ jQuery(function($)
 		bip_actif();
 	});
 
+	$("#btn-close-timers").click(function(e){
+		$('.icone-close').trigger( "click" );
+	});
+
 	$('.nbr-clk li a').click(function(_e)
 	{
 		_e.preventDefault();
@@ -101,22 +105,38 @@ jQuery(function($)
 			localStorage['t3_pomo'] = __pomo;
 
 			var __decompose = $('#f-pomo').val().split('+');
+			
+			for(let index in __decompose){
+				let time_tokens = __decompose[index]
+					.trim()
+					.split("*");
 
-			for (var __k in __decompose)
+				__decompose[index] = time_tokens[0];
+
+				if(time_tokens.length == 2){
+					let times = Number(time_tokens[1]);
+
+					for(let c=0; c< times - 1; c++){
+						__decompose.splice(index, 0, __decompose[index]);
+					}
+				}
+			}
+
+			for (let index in __decompose)
 			{
 
-				if(__decompose[__k].trim().split(' ').length == 2){
-					let minutes_seconds_tokens = __decompose[__k].trim().split(' ');
-					__decompose[__k] = minutes_seconds_tokens[0]
-					__decompose[__k] += (minutes_seconds_tokens[1] / 60);
-				}
-				
-				var __temps = __decompose[__k] * 60;
+				let time_tokens = __decompose[index]
+					.trim()
+					.split(' ')
+					.map(strNumber => Number(strNumber));
+				let res = time_tokens[0];
 
-				if (__temps)
-				{
-					addMinuteur(__temps, get_t_time(__temps));
+				if(time_tokens.length == 2){
+					res += (time_tokens[1] / 60);
 				}
+
+				res *= 60;
+				addMinuteur(res, get_t_time(res));
 			}
 		
 			actualise = true;
@@ -736,6 +756,8 @@ jQuery(function($)
 		/*$('#cdr-blo').fadeIn( 500, function() {
 		 $(this).append(__html);
 		 });*/
+
+
 
 		$('#m' + _id + '-ldring').click(function(_e)
 		{
